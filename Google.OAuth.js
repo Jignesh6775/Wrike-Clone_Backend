@@ -12,7 +12,7 @@ passport.use(
         {
             clientID: client_id,
             clientSecret: client_secret,
-            callbackURL: "http://localhost:8090/users/auth/google/callback",
+            callbackURL: "https://wrike-clone-backend.onrender.com/users/auth/google/callback",
         },
         async function (accessToken, refreshToken, profile, cb) {
             let user = {

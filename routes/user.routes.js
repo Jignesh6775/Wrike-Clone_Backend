@@ -100,7 +100,7 @@ function token_Generator(res, name, id,image) {
         { expiresIn: "12d" }
     );
     
-    const redirectUrl = `http://127.0.0.1:5501/Frontend/dashboard.html?token=${token}&username=${name}&image=${image}`;
+    const redirectUrl = `https://profound-basbousa-ffaf25.netlify.app/dashboard.html?token=${token}&username=${name}&image=${image}`;
 
     res.redirect(redirectUrl);
 }
